@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "text": "Viajar para Paris",
+    "completed": false
+  },
+  {
+    "id": 2,
+    "text": "Ter uma casa própria",
+    "completed": false
+  },
+  {
+    "id": 3,
+    "text": "Adotar um cachorro",
+    "completed": false
+  },
+  {
+    "id": 4,
+    "text": "Fazer uma viagem de carro pelo país",
+    "completed": false
+  },
+  {
+    "id": 5,
+    "text": "Visitar uma praia paradisíaca",
+    "completed": true
+  },
+  {
+    "id": 6,
+    "text": "Assistir ao pôr do sol em um lugar especial",
+    "completed": true
+  }
+]

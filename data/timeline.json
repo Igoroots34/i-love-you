@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "date": "2023-10-06",
+    "title": "Nosso Primeiro Encontro",
+    "description": "O dia em que tudo começou, quando nos conhecemos e soubemos que algo especial estava surgindo."
+  },
+  {
+    "id": 2,
+    "date": "2023-10-24",
+    "title": "Primeiro Beijo",
+    "description": "Um momento mágico que selou o começo da nossa história."
+  },
+  {
+    "id": 3,
+    "date": "2023-11-15",
+    "title": "Pedido de Namoro",
+    "description": "Quando oficializamos nosso amor e decidimos construir algo juntos."
+  },
+  {
+    "id": 4,
+    "date": "2023-12-24",
+    "title": "Primeiro Natal Juntos",
+    "description": "Celebramos o amor e a união ao lado de nossas famílias."
+  },
+  {
+    "id": 5,
+    "date": "2023-12-31",
+    "title": "Virada de Ano",
+    "description": "Juntos vimos o início de um novo ano, com promessas e sonhos compartilhados."
+  }
+]

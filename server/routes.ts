@@ -1,6 +1,6 @@
 import type { Express, Request, Response } from "express";
 import { createServer, type Server } from "http";
-import { storage } from "./storage";
+import { jsonStorage as storage } from "./jsonStorage";
 import { 
   insertTimelineSchema, 
   insertMovieSchema, 
