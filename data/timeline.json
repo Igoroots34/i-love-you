@@ -28,5 +28,11 @@
     "date": "2023-12-31",
     "title": "Virada de Ano",
     "description": "Juntos vimos o início de um novo ano, com promessas e sonhos compartilhados."
+  },
+  {
+    "date": "2024-03-21",
+    "title": "Nova Memória",
+    "description": "Um momento especial para testar o armazenamento persistente.",
+    "id": 6
   }
 ]
