@@ -8,8 +8,12 @@ import {
   insertDreamSchema 
 } from "@shared/schema";
 import { z } from "zod";
+import express from "express";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Serve static files from the "public" directory
+  app.use("/images", express.static("public/images"));
+
   // prefix all routes with /api
   
   // Photos API

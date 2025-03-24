@@ -104,7 +104,7 @@ const TimelineSection = () => {
   };
 
   return (
-    <section id="timeline" className="py-16 bg-slate-900/30 relative">
+    <section id="timeline" className="py-16 bg-amber-100/30 backdrop-blur-sm relative">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -128,9 +128,9 @@ const TimelineSection = () => {
             <div className="space-y-8">
               {[...Array(3)].map((_, i) => (
                 <div key={i} className="pl-8 animate-pulse">
-                  <div className="h-3 w-20 bg-slate-700 rounded mb-2"></div>
-                  <div className="h-5 w-40 bg-slate-700 rounded mb-2"></div>
-                  <div className="h-16 w-full bg-slate-700 rounded"></div>
+                  <div className="h-3 w-20 bg-amber-700 rounded mb-2"></div>
+                  <div className="h-5 w-40 bg-amber-700 rounded mb-2"></div>
+                  <div className="h-16 w-full bg-amber-700 rounded"></div>
                 </div>
               ))}
             </div>

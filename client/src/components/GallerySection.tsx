@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useQuery } from '@tanstack/react-query';
 import { useToast } from '@/hooks/use-toast';
-import { apiRequest } from '@/lib/queryClient';
+import { stockImages } from '@/lib/data'; // Importa diretamente o stockImages
 
 interface Photo {
   id: number;
@@ -13,22 +12,6 @@ interface Photo {
 
 const GallerySection = () => {
   const [selectedPhoto, setSelectedPhoto] = useState<Photo | null>(null);
-  const { toast } = useToast();
-
-  // Fetch photos from the server
-  const { data: photos = [], isLoading, error } = useQuery<Photo[]>({
-    queryKey: ['/api/photos'],
-  });
-
-  useEffect(() => {
-    if (error) {
-      toast({
-        title: "Erro ao carregar fotos",
-        description: "Não foi possível carregar as fotos. Por favor, tente novamente mais tarde.",
-        variant: "destructive",
-      });
-    }
-  }, [error, toast]);
 
   const openLightbox = (photo: Photo) => {
     setSelectedPhoto(photo);
@@ -53,7 +36,7 @@ const GallerySection = () => {
   }, [selectedPhoto]);
 
   return (
-    <section id="galeria" className="py-16 bg-background relative">
+    <section id="galeria" className="py-16 relative">
       <div className="container mx-auto px-4">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -66,42 +49,34 @@ const GallerySection = () => {
           <p className="text-lg text-gray-300 mt-3">Cada foto conta um pouco da nossa história</p>
         </motion.div>
         
-        {isLoading ? (
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 animate-pulse">
-            {[...Array(8)].map((_, i) => (
-              <div key={i} className="h-64 bg-slate-800 rounded-lg"></div>
-            ))}
-          </div>
-        ) : (
-          <motion.div 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
-          >
-            {photos.map((photo) => (
-              <motion.div
-                key={photo.id}
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="overflow-hidden rounded-xl shadow-lg cursor-pointer relative group"
-                onClick={() => openLightbox(photo)}
-              >
-                <img 
-                  src={photo.url} 
-                  alt={photo.alt} 
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
-                  <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    Ver foto
-                  </span>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-        )}
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+        >
+          {stockImages.map((photo) => (
+            <motion.div
+              key={photo.id}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="overflow-hidden rounded-xl shadow-lg cursor-pointer relative group"
+              onClick={() => openLightbox(photo)}
+            >
+              <img 
+                src={photo.url} 
+                alt={photo.alt} 
+                className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Ver foto
+                </span>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
       
       {/* Lightbox */}

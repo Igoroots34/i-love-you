@@ -32,5 +32,6 @@ export default defineConfig({
   build: {
     outDir: path.resolve(__dirname, "dist/public"),
     emptyOutDir: true,
+    assetsDir: "assets", // Certifique-se de que os assets sejam organizados
   },
 });

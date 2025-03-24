@@ -16,11 +16,13 @@ const Home = () => {
   }, []);
 
   const daisyPositions = [
-    { top: '20%', left: '5%', width: 40, animationDelay: 0 },
-    { top: '60%', right: '10%', width: 30, animationDelay: 2 },
-    { top: '30%', left: '80%', width: 35, animationDelay: 4 },
-    { top: '80%', left: '30%', width: 25, animationDelay: 3 },
-    { top: '15%', right: '25%', width: 45, animationDelay: 1 },
+    { top: '15%', left: '5%', width: 60, animationDelay: 0, animationDuration: 8 },
+    { top: '50%', right: '10%', width: 50, animationDelay: 1, animationDuration: 7 },
+    { top: '25%', left: '75%', width: 70, animationDelay: 2, animationDuration: 9 },
+    { top: '70%', left: '20%', width: 55, animationDelay: 3, animationDuration: 6 },
+    { top: '10%', right: '30%', width: 80, animationDelay: 1.5, animationDuration: 10 },
+    { top: '40%', left: '10%', width: 65, animationDelay: 2.5, animationDuration: 8 },
+    { top: '85%', right: '15%', width: 75, animationDelay: 0.5, animationDuration: 7 }
   ];
 
   return (
@@ -37,9 +39,9 @@ const Home = () => {
           }}
         >
           <motion.div
-            animate={{ y: [-20, 0, -20] }}
+            animate={{ y: [-30, 0, -30] }}
             transition={{ 
-              duration: 6, 
+              duration: position.animationDuration, 
               ease: "easeInOut", 
               repeat: Infinity,
               delay: position.animationDelay 

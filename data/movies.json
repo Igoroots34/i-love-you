@@ -1,38 +1,38 @@
 [
   {
     "id": 1,
-    "title": "A Culpa é das Estrelas",
-    "imageUrl": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-    "watched": true
+    "title": "O Poderoso Chefão",
+    "imageUrl": "https://wallpapers.com/images/featured/michael-corleone-i2jd6400p7g33wi0.jpg",
+    "watched": false
   },
   {
     "id": 2,
-    "title": "Me Before You",
-    "imageUrl": "https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "title": "Cidadão Kane",
+    "imageUrl": "https://wallpaper.forfun.com/fetch/df/dfaceecc7b5ecf44bb0ad14da0d3d08e.jpeg",
     "watched": false
   },
   {
     "id": 3,
-    "title": "La La Land",
-    "imageUrl": "https://images.unsplash.com/photo-1516514522897-737d9fb4589d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-    "watched": true
+    "title": "Casablanca",
+    "imageUrl": "https://wallpapercat.com/w/full/2/b/8/307131-3840x2160-desktop-4k-casablanca-movie-wallpaper-image.jpg",
+    "watched": false
   },
   {
     "id": 4,
-    "title": "Titanic",
-    "imageUrl": "https://images.unsplash.com/photo-1546704864-07229da8c8d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-    "watched": true
+    "title": "Um Sonho de Liberdade",
+    "imageUrl": "https://cdn.culturagenial.com/imagens/um-sonho-de-liberdade-cke.jpg?class=article",
+    "watched": false
   },
   {
     "id": 5,
-    "title": "Orgulho e Preconceito",
-    "imageUrl": "https://images.unsplash.com/photo-1510025369388-f613ec4bc10b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "title": "O Silêncio dos Inocentes",
+    "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiFFZBA1HuRQycv9W9AFXoPTa3NKDCvLcYA8TStBT_3PgD_uBGI6u-Jd5bLndXQM91hMJUhSVgQGRzurfcgQSKEGHQUg2WAcYcVu6IP-3amfKgCqPKckBEnJ4GNIU3jjGraQIjFdZWQHa-/s1600/fica+caladinha+FICAFICA+CALADINHA.jpg",
     "watched": false
   },
   {
     "id": 6,
-    "title": "Amor Para Recordar",
-    "imageUrl": "https://images.unsplash.com/photo-1490131784822-b4626a8ec96a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "title": "Cantando na Chuva",
+    "imageUrl": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/6519ebc6-3629-4934-a047-3c02f401c534/a170396bc24867eb125781d2b8048afc39f59755.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom",
     "watched": false
   }
 ]
