@@ -12,7 +12,7 @@ const TimerSection = () => {
 
   useEffect(() => {
     // October 6, 2024
-    const startDate = new Date('October 6, 2024 00:00:00').getTime();
+    const startDate = new Date('October 6, 2024').getTime();
     
     const updateCounter = () => {
       const now = new Date().getTime();
@@ -70,7 +70,7 @@ const TimerSection = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="max-w-4xl mx-auto bg-gray-500/10 rounded-2xl backdrop-blur-sm shadow-2xl p-6 md:p-10"
+          className="max-w-4xl mx-auto bg-gray-500/10 border border-solid border-stone-800 rounded-2xl backdrop-blur-sm shadow-2xl p-6 md:p-10"
         >
           <div className="text-center mb-6">
             <p className="text-xl md:text-2xl text-primary font-light mb-2">Amando você desde</p>

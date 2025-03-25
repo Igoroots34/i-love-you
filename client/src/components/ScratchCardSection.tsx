@@ -127,12 +127,12 @@ const ScratchCardSection = () => {
   // Custom confetti hearts
   const renderConfetti = () => {
     const hearts = [];
-    const colors = ['#ff0000', '#ff77a9', '#ff3377', '#ff99c2', '#ffccdb'];
+    const colors = ['#00ff00', '#77ff77', '#33ff33', '#99ff99', '#ccffcc'];
 
     for (let i = 0; i < 40; i++) {
       const left = `${Math.random() * 100}%`;
       const animDuration = 1 + Math.random() * 2;
-      const size = 30 + Math.random() * 20;
+      const size = 40 + Math.random() * 20;
       const color = colors[Math.floor(Math.random() * colors.length)];
 
       hearts.push(
@@ -175,7 +175,7 @@ const ScratchCardSection = () => {
   };
 
   return (
-    <section id="mensagem" className="py-16 bg-background relative">
+    <section id="mensagem" className="py-16 bg-transparent relative">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -202,7 +202,7 @@ const ScratchCardSection = () => {
                 {!isFlipped ? (
                   <motion.div
                     key="front"
-                    className="absolute inset-0 flex items-center justify-center text-center p-6 bg-gradient-to-br from-slate-800 to-background rounded-2xl shadow-lg"
+                    className="absolute inset-0 flex items-center justify-center text-center p-6 bg-gradient-to-br from-lime-950 to-background rounded-2xl shadow-lg"
                     variants={frontVariants}
                     initial="hidden"
                     animate="visible"
@@ -232,7 +232,7 @@ const ScratchCardSection = () => {
                 ) : (
                   <motion.div
                     key="back"
-                    className="absolute inset-0 flex items-center justify-center text-center p-6 bg-gradient-to-br from-primary/30 to-slate-800 rounded-2xl shadow-lg"
+                    className="absolute inset-0 flex items-center justify-center text-center p-6 bg-gradient-to-br from-primary/30 to-lime-950 rounded-2xl shadow-lg"
                     variants={backVariants}
                     initial="hidden"
                     animate="visible"

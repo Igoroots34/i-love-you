@@ -10,8 +10,8 @@ const Navigation = () => {
 
   const menuItems = [
     { name: 'Contador', href: '#contador' },
-    { name: 'Galeria', href: '#galeria' },
-    { name: 'Nossa História', href: '#timeline' },
+    { name: 'Momentos', href: '#galeria' },
+    { name: 'Memórias', href: '#timeline' },
     { name: 'Mensagem', href: '#mensagem' },
     { name: 'Filmes', href: '#filmes' },
     { name: 'Músicas', href: '#musicas' },
@@ -19,12 +19,9 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed w-full bg-background/90 shadow-lg z-50 backdrop-blur-sm">
+    <nav className="fixed w-full bg-lime-950/50 shadow-lg z-50 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-3">
-        <div className="flex justify-between items-center">
-          <div>
-            <h1 className="text-primary font-playfair text-2xl">Nossa História</h1>
-          </div>
+        <div className="flex justify-end items-center">
           <div className="hidden md:flex space-x-6">
             {menuItems.map((item) => (
               <a 

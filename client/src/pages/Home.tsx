@@ -16,13 +16,13 @@ const Home = () => {
   }, []);
 
   const daisyPositions = [
-    { top: '15%', left: '5%', width: 60, animationDelay: 0, animationDuration: 8 },
-    { top: '50%', right: '10%', width: 50, animationDelay: 1, animationDuration: 7 },
-    { top: '25%', left: '75%', width: 70, animationDelay: 2, animationDuration: 9 },
-    { top: '70%', left: '20%', width: 55, animationDelay: 3, animationDuration: 6 },
-    { top: '10%', right: '30%', width: 80, animationDelay: 1.5, animationDuration: 10 },
-    { top: '40%', left: '10%', width: 65, animationDelay: 2.5, animationDuration: 8 },
-    { top: '85%', right: '15%', width: 75, animationDelay: 0.5, animationDuration: 7 }
+    { top: '15%', left: '5%', width: 120, animationDelay: 0, animationDuration: 8 },
+    { top: '50%', right: '10%', width: 110, animationDelay: 1, animationDuration: 7 },
+    { top: '25%', left: '75%', width: 130, animationDelay: 2, animationDuration: 9 },
+    { top: '70%', left: '20%', width: 115, animationDelay: 3, animationDuration: 6 },
+    { top: '10%', right: '30%', width: 140, animationDelay: 1.5, animationDuration: 10 },
+    { top: '40%', left: '10%', width: 125, animationDelay: 2.5, animationDuration: 8 },
+    { top: '85%', right: '15%', width: 135, animationDelay: 0.5, animationDuration: 7 }
   ];
 
   return (
@@ -64,7 +64,7 @@ const Home = () => {
               transition={{ duration: 0.5 }}
             >
               <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-4 text-white">
-                <span className="block">Uma História de</span>
+                <span className="block">Com Todo Meu</span>
                 <span className="text-primary">Amor</span>
               </h1>
             </motion.div>
@@ -74,11 +74,11 @@ const Home = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl md:text-2xl max-w-2xl mx-auto mb-10 text-gray-300"
             >
-              Cada momento juntos é uma página em nosso livro de amor...
+              A cada instante, nosso amor ganha novas memórias...
             </motion.p>
           </div>
         </div>
-        <div className="absolute inset-0 bg-dark-purple opacity-30 z-0"></div>
+        <div className="absolute inset-0 bg-dark-primary opacity-30 z-0"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-background to-transparent opacity-80 z-0"></div>
       </header>
 

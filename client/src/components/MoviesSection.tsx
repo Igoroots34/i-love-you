@@ -5,13 +5,13 @@ import { queryClient, apiRequest } from '@/lib/queryClient';
 import { useToast } from '@/hooks/use-toast';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Button } from '@/components/ui/button';
-import { 
-  Dialog, 
-  DialogContent, 
-  DialogHeader, 
-  DialogTitle, 
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
   DialogFooter,
-  DialogTrigger 
+  DialogTrigger
 } from '@/components/ui/dialog';
 import { Input } from '@/components/ui/input';
 import { Plus, Film } from 'lucide-react';
@@ -20,15 +20,18 @@ interface Movie {
   id: number;
   title: string;
   imageUrl: string;
+  genre: string;
   watched: boolean;
 }
+
 
 const MoviesSection = () => {
   const { toast } = useToast();
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [newMovie, setNewMovie] = useState({
     title: '',
-    imageUrl: ''
+    imageUrl: '',
+    genre: ''
   });
 
   // Fetch movies
@@ -66,7 +69,7 @@ const MoviesSection = () => {
         title: "Filme adicionado",
         description: "O novo filme foi adicionado com sucesso!",
       });
-      setNewMovie({ title: '', imageUrl: '' });
+      setNewMovie({ title: '', imageUrl: '', genre: '' });
       setIsDialogOpen(false);
     },
     onError: () => {
@@ -88,13 +91,13 @@ const MoviesSection = () => {
       });
       return;
     }
-    
+
     // If no image URL provided, use a default placeholder
     const movieData = {
       ...newMovie,
       imageUrl: newMovie.imageUrl || 'https://images.unsplash.com/photo-1478720568477-152d9b164e26?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
     };
-    
+
     addMovieMutation.mutate(movieData);
   };
 
@@ -111,8 +114,8 @@ const MoviesSection = () => {
 
   const item = {
     hidden: { opacity: 0, y: 20 },
-    show: { 
-      opacity: 1, 
+    show: {
+      opacity: 1,
       y: 0,
       transition: {
         duration: 0.4
@@ -121,7 +124,7 @@ const MoviesSection = () => {
   };
 
   return (
-    <section id="filmes" className="py-16 bg-slate-900/30 relative">
+    <section id="filmes" className="py-16 bg-transparent relative">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -131,23 +134,23 @@ const MoviesSection = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white">Filmes Para Assistirmos</h2>
-          <p className="text-lg text-gray-300 mt-3">Nossa lista cinematográfica</p>
+          <p className="text-lg text-stone-300 mt-3">Nossa lista cinematográfica</p>
         </motion.div>
-        
+
         {isLoading ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-pulse">
             {[...Array(6)].map((_, i) => (
-              <div key={i} className="bg-slate-800 rounded-xl overflow-hidden shadow-lg">
-                <div className="h-48 bg-slate-700"></div>
+              <div key={i} className="bg-stone-800 rounded-xl overflow-hidden shadow-lg">
+                <div className="h-48 bg-stone-700"></div>
                 <div className="p-5 space-y-3">
-                  <div className="h-5 w-2/3 bg-slate-700 rounded"></div>
-                  <div className="h-4 w-1/3 bg-slate-700 rounded"></div>
+                  <div className="h-5 w-2/3 bg-stone-700 rounded"></div>
+                  <div className="h-4 w-1/3 bg-stone-700 rounded"></div>
                 </div>
               </div>
             ))}
           </div>
         ) : (
-          <motion.div 
+          <motion.div
             variants={container}
             initial="hidden"
             whileInView="show"
@@ -160,9 +163,9 @@ const MoviesSection = () => {
                 variants={item}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="bg-slate-800/60 rounded-xl overflow-hidden shadow-lg transition-all duration-300"
+                className="bg-stone-800/60 rounded-xl overflow-hidden shadow-lg transition-all duration-300"
               >
-                <div className="h-48 overflow-hidden">
+                <div className="h-64 overflow-hidden">
                   <img
                     src={movie.imageUrl}
                     alt={movie.title}
@@ -170,34 +173,28 @@ const MoviesSection = () => {
                   />
                 </div>
                 <div className="p-5">
-                  <h3 className="text-xl font-playfair font-bold text-white mb-3">
-                    {movie.title}
-                  </h3>
+                  <h3 className="text-xl font-playfair font-bold text-white mb-1">{movie.title}</h3>
+                  <p className="text-sm text-stone-400 mb-3">{movie.genre}</p>
                   <div className="flex items-center">
-                    <Checkbox 
+                    <Checkbox
                       id={`watched-${movie.id}`}
                       checked={movie.watched}
                       onCheckedChange={(checked) => {
-                        updateMovieMutation.mutate({ 
-                          id: movie.id, 
-                          watched: checked as boolean 
-                        });
+                        updateMovieMutation.mutate({ id: movie.id, watched: checked as boolean });
                       }}
                       className="data-[state=checked]:bg-primary data-[state=checked]:border-primary"
                     />
-                    <label 
-                      htmlFor={`watched-${movie.id}`}
-                      className="ml-2 text-gray-300"
-                    >
+                    <label htmlFor={`watched-${movie.id}`} className="ml-2 text-stone-300">
                       {movie.watched ? 'Já assistimos' : 'Ainda não assistimos'}
                     </label>
                   </div>
                 </div>
+
               </motion.div>
             ))}
           </motion.div>
         )}
-        
+
         <div className="text-center mt-12">
           <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
             <DialogTrigger asChild>
@@ -215,19 +212,30 @@ const MoviesSection = () => {
                   <Input
                     id="title"
                     value={newMovie.title}
-                    onChange={(e) => setNewMovie({...newMovie, title: e.target.value})}
+                    onChange={(e) => setNewMovie({ ...newMovie, title: e.target.value })}
                     placeholder="Nome do filme"
                     required
                   />
                 </div>
                 <div className="space-y-2">
+                  <label htmlFor="genre" className="text-sm font-medium">Gênero do Filme</label>
+                  <Input
+                    id="genre"
+                    value={newMovie.genre}
+                    onChange={(e) => setNewMovie({ ...newMovie, genre: e.target.value })}
+                    placeholder="Ex: Ação, Comédia, Drama"
+                    required
+                  />
+                </div>
+
+                <div className="space-y-2">
                   <label htmlFor="imageUrl" className="text-sm font-medium">
-                    URL da Imagem <span className="text-gray-400 text-xs">(opcional)</span>
+                    URL da Imagem <span className="text-stone-400 text-xs">(opcional)</span>
                   </label>
                   <Input
                     id="imageUrl"
                     value={newMovie.imageUrl}
-                    onChange={(e) => setNewMovie({...newMovie, imageUrl: e.target.value})}
+                    onChange={(e) => setNewMovie({ ...newMovie, imageUrl: e.target.value })}
                     placeholder="https://example.com/movie-image.jpg"
                   />
                 </div>

@@ -79,7 +79,7 @@ const MusicSection = () => {
             transition={{ duration: 0.6 }}
           >
             <iframe 
-              src="https://open.spotify.com/embed/playlist/37i9dQZF1DXdPec7aLTmlC" 
+              src="https://open.spotify.com/embed/playlist/1nd89Mg6jPgQmlllLZC1o3?" 
               width="100%" 
               height="380" 
               frameBorder="0" 
@@ -94,14 +94,14 @@ const MusicSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="mt-10 bg-slate-800/60 rounded-xl p-6 shadow-lg"
+            className="mt-10 bg-stone-800/60 rounded-xl p-6 shadow-lg"
           >
             <h3 className="text-xl text-primary mb-4">Nossas Músicas Especiais</h3>
             
             {isLoading ? (
               <ul className="space-y-3 animate-pulse">
                 {[...Array(5)].map((_, i) => (
-                  <li key={i} className="h-6 bg-slate-700 rounded w-3/4"></li>
+                  <li key={i} className="h-6 bg-stone-700 rounded w-3/4"></li>
                 ))}
               </ul>
             ) : (
@@ -127,7 +127,7 @@ const MusicSection = () => {
                 value={newSongTitle}
                 onChange={(e) => setNewSongTitle(e.target.value)}
                 placeholder="Adicionar música especial..."
-                className="flex-1 bg-slate-900/70 text-white focus-visible:ring-primary"
+                className="flex-1 bg-stone-900/70 text-white focus-visible:ring-primary"
               />
               <Button 
                 onClick={handleAddSong}

@@ -46,7 +46,7 @@ const GallerySection = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white">Nossas Memórias</h2>
-          <p className="text-lg text-gray-300 mt-3">Cada foto conta um pouco da nossa história</p>
+          <p className="text-lg text-stone-600 mt-3">Cada foto conta um pouco da nossa história</p>
         </motion.div>
         
         <motion.div 

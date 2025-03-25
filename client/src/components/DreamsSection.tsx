@@ -98,7 +98,7 @@ const DreamsSection = () => {
   };
 
   return (
-    <section id="sonhos" className="py-16 bg-slate-900/30 relative">
+    <section id="sonhos" className="py-16 bg-transparent relative">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -117,14 +117,14 @@ const DreamsSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-slate-800/60 rounded-xl p-6 shadow-lg"
+            className="bg-stone-800/60 rounded-xl p-6 shadow-lg"
           >
             <h3 className="text-xl text-primary mb-4">Sonhos a Realizar</h3>
             
             {isLoading ? (
               <ul className="space-y-3 animate-pulse">
                 {[...Array(4)].map((_, i) => (
-                  <li key={i} className="h-10 bg-slate-700 rounded"></li>
+                  <li key={i} className="h-10 bg-stone-700 rounded"></li>
                 ))}
               </ul>
             ) : (
@@ -142,7 +142,7 @@ const DreamsSection = () => {
                     <motion.li
                       key={dream.id}
                       variants={item}
-                      className="flex items-center justify-between bg-slate-900/50 rounded-lg p-3"
+                      className="flex items-center justify-between bg-stone-900/50 rounded-lg p-3"
                     >
                       <div className="flex items-center">
                         <Checkbox 
@@ -175,7 +175,7 @@ const DreamsSection = () => {
                 value={newDreamText}
                 onChange={(e) => setNewDreamText(e.target.value)}
                 placeholder="Adicionar um sonho..."
-                className="flex-1 bg-slate-900/70 text-white focus-visible:ring-primary"
+                className="flex-1 bg-stone-900/70 text-white focus-visible:ring-primary"
               />
               <Button 
                 onClick={handleAddDream}
@@ -192,14 +192,14 @@ const DreamsSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-slate-800/60 rounded-xl p-6 shadow-lg"
+            className="bg-stone-800/60 rounded-xl p-6 shadow-lg"
           >
             <h3 className="text-xl text-primary mb-4">Sonhos Realizados</h3>
             
             {isLoading ? (
               <ul className="space-y-3 animate-pulse">
                 {[...Array(3)].map((_, i) => (
-                  <li key={i} className="h-10 bg-slate-700 rounded"></li>
+                  <li key={i} className="h-10 bg-stone-700 rounded"></li>
                 ))}
               </ul>
             ) : (
@@ -217,7 +217,7 @@ const DreamsSection = () => {
                     <motion.li
                       key={dream.id}
                       variants={item}
-                      className="flex items-center justify-between bg-slate-900/50 rounded-lg p-3"
+                      className="flex items-center justify-between bg-stone-900/50 rounded-lg p-3"
                     >
                       <div className="flex items-center">
                         <Checkbox 
