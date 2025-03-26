@@ -1,5 +1,4 @@
 import express, { type Request, Response, NextFunction } from "express";
-import routes from "./routes"; // Certifique-se de que o caminho está correto
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 

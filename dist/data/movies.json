@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "O Poderoso Chefão",
+    "imageUrl": "https://wallpapers.com/images/featured/michael-corleone-i2jd6400p7g33wi0.jpg",
+    "watched": false,
+    "genre": "Crime, Drama"
+  },
+  {
+    "id": 2,
+    "title": "Cidadão Kane",
+    "imageUrl": "https://wallpaper.forfun.com/fetch/df/dfaceecc7b5ecf44bb0ad14da0d3d08e.jpeg",
+    "watched": false,
+    "genre": "Drama, Mistério"
+  },
+  {
+    "id": 3,
+    "title": "Casablanca",
+    "imageUrl": "https://wallpapercat.com/w/full/2/b/8/307131-3840x2160-desktop-4k-casablanca-movie-wallpaper-image.jpg",
+    "watched": false,
+    "genre": "Romance, Drama, Guerra"
+  },
+  {
+    "id": 4,
+    "title": "Um Sonho de Liberdade",
+    "imageUrl": "https://cdn.culturagenial.com/imagens/um-sonho-de-liberdade-cke.jpg?class=article",
+    "watched": false,
+    "genre": "Drama"
+  },
+  {
+    "id": 5,
+    "title": "O Silêncio dos Inocentes",
+    "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiFFZBA1HuRQycv9W9AFXoPTa3NKDCvLcYA8TStBT_3PgD_uBGI6u-Jd5bLndXQM91hMJUhSVgQGRzurfcgQSKEGHQUg2WAcYcVu6IP-3amfKgCqPKckBEnJ4GNIU3jjGraQIjFdZWQHa-/s1600/fica+caladinha+FICAFICA+CALADINHA.jpg",
+    "watched": false,
+    "genre": "Suspense, Terror, Crime"
+  },
+  {
+    "id": 6,
+    "title": "Cantando na Chuva",
+    "imageUrl": "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/6519ebc6-3629-4934-a047-3c02f401c534/a170396bc24867eb125781d2b8048afc39f59755.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom",
+    "watched": false,
+    "genre": "Musical, Comédia, Romance"
+  },
+  {
+    "id": 7,
+    "title": "A Lista de Schindler",
+    "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-1lYS6_ZAynds3M08XuZJWR7sdT89neQFiiPnSDRrwKp0UZwhIFHEiAMAmMVXiywMh_UlRd9QAv3bL5SaBbp7jwVrn6sAoXGoEjs4DI51PSUiReQSOgisG0TzIszxN0ymFl8DnbpE2g8/w1200-h630-p-k-no-nu/a+lista+de+schindler.png",
+    "watched": false,
+    "genre": "Drama, História, Guerra"
+  },
+  {
+    "id": 8,
+    "title": "Pulp Fiction: Tempo de Violência",
+    "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEhqsa8gM5r8aLjmFZEoT5-5Xk2Hn8wcUWQB1Fws6QdbYQzwhrQlYt8XCLkrra1gflkCHLpO4qfBl3RdZb1ZxeeqTbotMiQbOm7h32pcxfbjAk5wT3x3AuN3Dbcnyunl-TbYMrEV3JhmTtuNSIAwE2KqyRRbJQWUtafDHHmHZHizvZwGPmOw3UZuhJIg/s1920/pulp-fiction_00423206.jpg",
+    "watched": false,
+    "genre": "Crime, Drama"
+  },
+  {
+    "id": 9,
+    "title": "O Senhor dos Anéis: O Retorno do Rei",
+    "imageUrl": "https://i.ytimg.com/vi/OQgySPQ5M3Y/maxresdefault.jpg",
+    "watched": false,
+    "genre": "Fantasia, Aventura, Ação"
+  },
+  {
+    "id": 10,
+    "title": "Clube da Luta",
+    "imageUrl": "https://assets.mubicdn.net/images/film/918/image-w1280.jpg?1689617201",
+    "watched": false,
+    "genre": "Drama"
+  },
+  {
+    "id": 11,
+    "title": "A Origem",
+    "imageUrl": "https://musicart.xboxlive.com/7/826b5100-0000-0000-0000-000000000002/504/image.jpg",
+    "watched": false,
+    "genre": "Ação, Ficção científica, Suspense"
+  },
+  {
+    "id": 12,
+    "title": "Forrest Gump: O Contador de Histórias",
+    "imageUrl": "https://i.ytimg.com/vi/vDY_uZAaU7g/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAvB0N_RTbdLsA5c-5r4COoG9bIvg",
+    "watched": false,
+    "genre": "Drama, Romance"
+  }
+]

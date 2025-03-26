@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "text": "Conhecer pelo menos uma das maravilhas do mundo",
+    "completed": false
+  },
+  {
+    "id": 2,
+    "text": "Ter uma casa própria, do nosso jeitinho",
+    "completed": false
+  },
+  {
+    "id": 3,
+    "text": "Adotar um doguinho",
+    "completed": false
+  },
+  {
+    "id": 4,
+    "text": "Fazer uma viagem de carro pelo país",
+    "completed": false
+  },
+  {
+    "id": 5,
+    "text": "Escrever uma história juntos",
+    "completed": false
+  },
+  {
+    "id": 6,
+    "text": "Assistir ao pôr do sol em um lugar especial",
+    "completed": false
+  },
+  {
+    "id": 7,
+    "text": "Casar do jeito que sonhamos",
+    "completed": false
+  },
+  {
+    "id": 8,
+    "text": "Envelhecer ao seu lado",
+    "completed": true
+  }
+]
