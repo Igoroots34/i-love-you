@@ -52,12 +52,14 @@ export const movies = pgTable("movies", {
   id: serial("id").primaryKey(),
   title: text("title").notNull(),
   imageUrl: text("imageUrl").notNull(),
+  genre: text("genre").notNull(),
   watched: boolean("watched").notNull().default(false),
 });
 
 export const insertMovieSchema = createInsertSchema(movies).pick({
   title: true,
   imageUrl: true,
+  genre: true,
 });
 
 export type InsertMovie = z.infer<typeof insertMovieSchema>;

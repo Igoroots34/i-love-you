@@ -3,25 +3,11 @@ export const stockImages = [
   { id: 1, url: "/images/foto6.jpg", alt: "Você é a luz que ilumina minha vida." },
   { id: 2, url: "/images/foto22.jpg", alt: "Cada momento com você é inesquecível." },
   { id: 3, url: "/images/foto3.jpg", alt: "Seu amor é como um pôr do sol, lindo e eterno." },
-  { id: 4, url: "/images/foto7.jpg", alt: "Você é meu sonho realizado." },
+  { id: 4, url: "/images/foto20.jpg", alt: "Você é meu sonho realizado." },
   { id: 5, url: "/images/foto5.jpg", alt: "Com você, tudo é mais bonito." },
   { id: 6, url: "/images/foto16.jpg", alt: "Meu coração pertence a você." },
   { id: 7, url: "/images/foto17.jpg", alt: "Você é meu porto seguro." },
-  { id: 8, url: "/images/foto18.jpg", alt: "Nosso amor é como as estrelas, eterno." },
-  { id: 9, url: "/images/foto19.jpg", alt: "Ao seu lado, tudo faz sentido." },
-  { id: 10, url: "/images/foto24.jpg", alt: "Você é meu pôr do sol favorito." },
-  { id: 11, url: "/images/foto27.jpg", alt: "Com você, até o céu é mais bonito." },
-  { id: 12, url: "/images/foto31.jpg", alt: "Você é minha lua em noites escuras." },
-  { id: 13, url: "/images/foto35.jpg", alt: "Cada jantar com você é especial." },
-  { id: 14, url: "/images/foto36.jpg", alt: "Você é meu paraíso particular." },
-  { id: 15, url: "/images/foto37.jpg", alt: "Nossas mãos juntas contam uma história de amor." },
-  { id: 16, url: "/images/foto39.jpg", alt: "Caminhar com você é meu lugar favorito." },
-  { id: 17, url: "/images/foto40.jpg", alt: "Com você, estou no topo do mundo." },
-  { id: 18, url: "/images/foto41.jpg", alt: "Dançar com você é como flutuar nas nuvens." },
-  { id: 19, url: "/images/foto4.jpg", alt: "Seu brilho ilumina minha vida." },
-  { id: 20, url: "/images/foto9.jpg", alt: "Você é minha vista favorita." },
-  { id: 21, url: "/images/foto10.jpg", alt: "Nossos corações batem como um só." },
-  { id: 22, url: "/images/foto11.jpg", alt: "Com você, o universo é mais bonito." }
+  { id: 8, url: "/images/foto18.jpg", alt: "Nosso amor é como as estrelas, eterno." }
 ];
 
 // Timeline events data

@@ -16,13 +16,13 @@ const Home = () => {
   }, []);
 
   const daisyPositions = [
-    { top: '15%', left: '5%', width: 120, animationDelay: 0, animationDuration: 8 },
-    { top: '50%', right: '10%', width: 110, animationDelay: 1, animationDuration: 7 },
-    { top: '25%', left: '75%', width: 130, animationDelay: 2, animationDuration: 9 },
-    { top: '70%', left: '20%', width: 115, animationDelay: 3, animationDuration: 6 },
-    { top: '10%', right: '30%', width: 140, animationDelay: 1.5, animationDuration: 10 },
-    { top: '40%', left: '10%', width: 125, animationDelay: 2.5, animationDuration: 8 },
-    { top: '85%', right: '15%', width: 135, animationDelay: 0.5, animationDuration: 7 }
+    { top: '15%', left: '5%', width: 40, animationDelay: 0, animationDuration: 8 },
+    { top: '50%', right: '10%', width: 60, animationDelay: 1, animationDuration: 7 },
+    { top: '25%', left: '75%', width: 50, animationDelay: 2, animationDuration: 9 },
+    { top: '70%', left: '20%', width: 51, animationDelay: 3, animationDuration: 6 },
+    { top: '10%', right: '30%', width: 65, animationDelay: 1.5, animationDuration: 10 },
+    { top: '40%', left: '10%', width: 55, animationDelay: 2.5, animationDuration: 8 },
+    { top: '85%', right: '15%', width: 70, animationDelay: 0.5, animationDuration: 7 }
   ];
 
   return (
